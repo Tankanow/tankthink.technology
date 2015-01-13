@@ -1,0 +1,881 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://blogawesome.com/' rel='self' type='application/rss+xml'/>
+<generator>
+clj-rss
+</generator>
+<title>
+My Awesome Blog
+</title>
+<link>
+http://blogawesome.com/
+</link>
+<description>
+This blog is awesome
+</description>
+<lastBuildDate>
+Tue, 13 Jan 2015 09:27:19 -0500
+</lastBuildDate>
+<author>
+Bob Bobbert
+</author>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/30-12-2014-lamda-architecture.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/30-12-2014-lamda-architecture.html
+</link>
+<title>
+5 Lamda Architecture Resources
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Lambda Archiecture is fascinating Architectural Pattern. I first read about it while researching &lt;a href=&quot;https://storm.apache.org/&quot;&gt;Apache Storm&lt;/a&gt;. Nathan Marz, the creator of Storm, discusses Lamda Archicture in his book &lt;a href=&quot;http://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343/ref=sr_1_1?ie=UTF8&amp;amp;qid=1419944429&amp;amp;sr=8-1&amp;amp;keywords=nathan+marz&quot;&gt;Big Data: Principles and best practices of scalable realtime data systems&lt;/a&gt;. Here are some good resources for learning more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/nathanmarz/runaway-complexity-in-big-data-and-a-plan-to-stop-it&quot;&gt;Runaway Complexity in Big Data and a Plan to Stop It&lt;/a&gt;
+Nathan Marz great slide deck on reducing complexity in Big Data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/interviews/marz-lambda-architecture&quot;&gt;Nathan Marz on Storm, Immutability in the Lambda Architecture, Clojure&lt;/a&gt;
+Nathan Marz Q&amp;amp;A from QCon 2014.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/articles/lambda-architecture-scalable-big-data-solutions&quot;&gt;Lambda Architecture: Design Simpler, Resilient, Maintainable and Scalable Big Data Solutions&lt;/a&gt;
+A great primer complete with working source code examples.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/presentations/lambda-arch-spring-xd?utm_source=infoqEmail&amp;amp;utm_medium=WeeklyNL_EditorialContentArchitectureDesign&amp;amp;utm_campaign=12022014news&quot;&gt;Implementing the Lambda Architecture with Spring XD&lt;/a&gt;
+A nice presentation from SpringOne 2014 with multiple example implementations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/news/2014/09/lambda-architecture-questions&quot;&gt;Questions About the Lambda Architecture&lt;/a&gt;
+An interesting article summarizing some of the concerns about Lamda Architecture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Tue, 30 Dec 2014 00:00:00 -0500
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/27-05-2014-java-service-rpm-example.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/27-05-2014-java-service-rpm-example.html
+</link>
+<title>
+Java Service RPM Example
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I just pushed a new repo &lt;a href=&quot;https://github.com/Tankanow/java-service-rpm-example&quot;&gt;Java Service RPM Example&lt;/a&gt; containing an example project for how to package your Java Microservice as an RPM for installation as a Linux SysV Init Script. I&amp;#8217;ll fill in this post in the days to come to let you know how it works.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Tue, 27 May 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/05-05-2014-one-reason-clojure-is-great.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/05-05-2014-one-reason-clojure-is-great.html
+</link>
+<title>
+Why Clojure is Great: Data
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Alan Perlis
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You&amp;#8217;ve probably seen this quote before. I&amp;#8217;ve seen in in countless blogs and books. It is referenced in the wonderful Clojure book &lt;a href=&quot;http://joyofclojure.com/&quot;&gt;The Joy of Clojure&lt;/a&gt;. I recently experienced the joy of Clojure directly through Perlis' pearl of wisdom (all puns intended).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I recently read a nice blog post on avoiding &lt;a href=&quot;http://www.javacodegeeks.com/2014/05/clojure-how-to-prevent-expected-map-got-vector-and-similar-errors.html&quot;&gt;unexpected issues&lt;/a&gt; in Clojure functions. I like the advice: small fns, destructuring and pre/post conditions so thought I would integrate it into a few functions. The epiphany came with the pre/post conditions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s start with a simple function that transforms a list to a vector.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+(defn list-&gt;vector
+  [xs]
+  (reduce conj [] xs))
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I want to add pre/post conditions to this simple function, but I can&amp;#8217;t seem to remember the syntax. Let&amp;#8217;s see if I can figure it out using the Clojure composite data types: set, vector, list and map.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;First: there are two named types of conditions, &lt;code&gt;:pre&lt;/code&gt; and &lt;code&gt;:post&lt;/code&gt;. Well the Clojure composite data type that supports named associations is a map, does this look right:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+{:pre nil :post nil}
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Second, let&amp;#8217;s think of what the values for each of the &lt;code&gt;:pre&lt;/code&gt; and &lt;code&gt;:post&lt;/code&gt; keys should be. It seems reasonable that there could be more than one &lt;code&gt;:pre&lt;/code&gt; function and more than one &lt;code&gt;:post&lt;/code&gt; function, so each value should be a collection of some sort. We don&amp;#8217;t really need to name the elements of these collections, but some sort of sequential collection makes sense so that the Clojure internals can apply the functions in order. In fact, doesn&amp;#8217;t &lt;code&gt;seq&lt;/code&gt; makes sense because I&amp;#8217;m sure the Clojure internals would love to use first &lt;code&gt;first&lt;/code&gt; and &lt;code&gt;rest&lt;/code&gt; to apply a collection of somethings. It seems the choice is between &lt;code&gt;list&lt;/code&gt; and &lt;code&gt;vector&lt;/code&gt;, and when choosing between a list and vector, we usually use vectors unless we are generating code forms because of the nice visual offset of the &lt;code&gt;[]&lt;/code&gt;, so a vector makes sense for each value:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+{:pre [] :post []}
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Lastly, we know that we are creating pre and post conditions, which are functions, so there&amp;#8217;s only one Clojure data types for this job, &lt;code&gt;list&lt;/code&gt;, I&amp;#8217;ve filled in each of the :pre and :post vectors with two functions that just have a bunk name &quot;fn&quot; and some &quot;args&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+{:pre [(fn args) (fn args))] :post [(fn args) (fn args))]}
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s say that we want our functions to ensure that our input is a list and not empty and our output is a vector and not empty; putting it all together:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+(defn list-&gt;vector
+  [xs]
+  {:pre [(list? xs) (not (empty? xs))] :post [(vector? %) (not (empty? %))]}
+  (reduce conj [] xs))
+[1 2 3]
+AssertionError Assert failed: (list? xs)  user/list-&gt;vector (form-init2119333260165711694.clj:1)
+AssertionError Assert failed: (not (empty? xs))  user/list-&gt;vector (form-init2119333260165711694.clj:1)
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Imagine trying the same process of discovery in Java for example without the aid of an IDE to show you the available methods on each object. It would be nearly impossible to do this in Java because most bits of data are wrapped in Objects with named fields and methods. This is one of the reasons Clojure is so intuitively powerful. And one of the reasons Perlis was so right.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Mon, 05 May 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/04-04-2014-refocus-simplify-1.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/04-04-2014-refocus-simplify-1.html
+</link>
+<title>
+Simplify and Focus Learning
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To learn, read. To know, write. To master, teach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; anonymous&lt;br&gt;
+&lt;cite&gt;Yogi Tea Bag&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock note&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+I&amp;#8217;ve seen a version of this quote attributed to &lt;a href=&quot;https://en.wikipedia.org/wiki/Yogi_Bhajan&quot;&gt;Yogi Bhajan&lt;/a&gt;; however, I first came across it on a &lt;a href=&quot;http://www.yogiproducts.com/&quot;&gt;Yogi&lt;/a&gt; Tea Bag.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are trying to learn so much all of the time. We are all passionate developers trying to improve as fast as we can. However, we inundate ourselves with learning materials and end up slowing down. We actually want to learn and get better. How? We simplify and focus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I am always trying to learn and improve. I&amp;#8217;ve been a manager for a little over a year now; however, I am still very passionate about technical learning. To this end, I usually schedule one dev task for myself each sprint and I spend much of my spare time reading &lt;a href=&quot;http://infoq.com&quot;&gt;InfoQ&lt;/a&gt;, &lt;a href=&quot;http://martinfowler.com/bliki/&quot;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&quot;http://www.javacodegeeks.com&quot;&gt;Java Code Geeks&lt;/a&gt;, &lt;a href=&quot;http://planet.clojure.in&quot;&gt;Planet Clojure&lt;/a&gt; and any and every book of interest. This has resulted in an over-saturation of learning material.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, I started &lt;a href=&quot;http://www.amazon.com/The-Joy-Clojure-Michael-Fogus/dp/1617291412/ref=dp_ob_title_bk&quot;&gt;Joy of Clojure&lt;/a&gt; last year, stopped to do problems on &lt;a href=&quot;http://www.4clojure.com&quot;&gt;4clojure&lt;/a&gt;, stopped to write my own blog in Clojure, stopped to try to really understand &lt;a href=&quot;https://github.com/ring-clojure/ring&quot;&gt;Ring&lt;/a&gt; and &lt;a href=&quot;https://github.com/weavejester/compojure&quot;&gt;Compojure&lt;/a&gt;, stopped to really understand the &lt;a href=&quot;https://github.com/clojure/clojure&quot;&gt;Clojure source code&lt;/a&gt;, stopped to get &lt;a href=&quot;http://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/ref=sr_1_1?ie=UTF8&amp;amp;qid=1396617984&amp;amp;sr=8-1&amp;amp;keywords=introduction+to+algorithms&quot;&gt;Introduction to Algorithms&lt;/a&gt; from the library. My library just sent me an email that it is so overdue that I might have to buy it from them. I read it for two weeks, but it&amp;#8217;s been propping up a lamp in my living for this last month because I&amp;#8217;ve been blogging more and writing more Clojure code again. Though I appreciate the beauty of the circle, this is getting crazy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For many of us, this is an extension of &lt;a href=&quot;http://zenhabits.net/distractionitis/&quot;&gt;distractionitis&lt;/a&gt;, but it is also an indication of lack of focus and introduction of complexity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It&amp;#8217;s time to re-balance my learning with Focus and Simplicity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are trying to learn too much at once and losing. We will fix this by simplifying and focusing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We all suffer from this at one point or another; actually, as developers, I think we are wired to do this to ourselves because we are depth-first by nature: we just &lt;em&gt;have&lt;/em&gt; to solve every problem we come across and we usually go down the rabbit hole directly in front of us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It&amp;#8217;s time to simplify and refocus. For me, I&amp;#8217;m going back to the Joy of Clojure. Also, I&amp;#8217;m adding one relatively orthogonal learning resource &lt;a href=&quot;http://pragprog.com/book/mnee/release-it&quot;&gt;Release It!&lt;/a&gt; because it is very relevant to my current job. I will be reading these books. Writing about these books. Teaching whomever will listen about the core values these books espouse. The road to mastery is begun.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Fri, 04 Apr 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/02-04-2014-four-ways-your-already-functional.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/02-04-2014-four-ways-your-already-functional.html
+</link>
+<title>
+4 Ways Your Enterprise is Already Doing Functional Programming
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Can&amp;#8217;t see the forest for the trees.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; idiom&lt;br&gt;
+&lt;cite&gt;humans&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Most enterprise architectures are &lt;em&gt;scared&lt;/em&gt; of functional programming. The funny thing is that they&amp;#8217;re probably already doing &quot;functional&quot; programming in Java, just poorly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;The standard tiered architecture is more functional than OOP. Tiered architectures pushes everything into services. Services are just groups of functions, not unlike Clojure namespaces, with no data. This is mostly procedural code, but it is definitely closer to Functional than OOP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lots of Value Objects with no behavior. This goes hand in hand with the tiered architecture. The truth here is that we just have lots of data separate from the methods that operate on that data. The fact that we create so many different containers for the data rather than just using maps is a non-functional thing we do, but the basic idea of &quot;data&quot; and separate &quot;functions&quot; is the same.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Immutable Classes. If you follow Joshua Bloch, as most enterprise java developers do, then they are almost certainly trying for immutability. We know it&amp;#8217;s a good idea. We just impose it ourselves with boilerplate code rather than allowing the language, e.g. Clojure, to ensure we are doing the right thing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lots of anonymous classes. We create these all the time when we want to create executables or reify interfaces with one method. Often times we create anonymous classes solely for the purpose of passing them to as a parameter to a method. Where else have I seen that. Oh yeah. First class functions - the foundation of &quot;functional&quot; languages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If your architect pushes back on you using a functional programming language because it is new, trendy and unproven - just point her to your enterprise standard tiered architecture and say we&amp;#8217;re doing this in the wrong tool.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Wed, 02 Apr 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/30-03-2014-microservices-1.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/30-03-2014-microservices-1.html
+</link>
+<title>
+Microservices 1
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Systems must be clean too. An invasive architecture overwhelms the domain logic and impacts agility.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Bob Martin&lt;br&gt;
+&lt;cite&gt;Clean Code&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;ACT 1&lt;/div&gt;
+&lt;p&gt;It&amp;#8217;s 2014 in Enterprise Development. You&amp;#8217;ve been developing for a few years in an enterprise setting - or even a start-up entering middle-age, learning a lot from peers and articles and conferences. Both your domain and engineering knowledge have grown in leaps and bounds. One day you realize that your are, most often, solving problems incidental to the core business problem your team/business-unit/department/division say they are solving. What gives?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have been thinking about incidental complexity a lot recently. I&amp;#8217;ve also been thinking about Agile, especially since Dave Thomas' &lt;a href=&quot;http://pragdave.me/blog/2014/03/04/time-to-kill-agile/&quot;&gt;Time to Kill Agile&lt;/a&gt; blog post. In any case, incidental complexity and agility are related - we will come back to this later. The crux is this: we read lots of articles about exciting development &amp;#8230;&amp;#8203; about solving exciting problems.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We want to move fast and solve exciting problems too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We can get back to solving interesting problems instead of incidental complexities with Microservices.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://martinfowler.com/&quot;&gt;Martin Fowler&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/boicy&quot;&gt;James Lewis&lt;/a&gt; recently published a blog in installments on martinfowler.com/articles/microservices.html[Microservices].
+- Examples
+- Turning Point: Remember, we want to develop with Agility.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;ACT 3&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Crisis: Our develoment cycles are dragging us down.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Solution: We can use microservices to return to the &quot;startup&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Climax: If you want to go back to the days when you were solving essential business problems instead of incidental complexity, microservices are a way to go.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Resolution: Microservices are obviously not a silver bullet; &lt;a href=&quot;http://www.infoq.com/news/2014/03/microservices-soa&quot;&gt;some have already taken issue&lt;/a&gt; with Fowler and Lewis' mere mention of the word. However, Microservices are a valid architecture for those of us working in Enterprise who yearn to tackle Essential Business Problems again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Sun, 30 Mar 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/17-03-2014-run-length-decoding.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/17-03-2014-run-length-decoding.html
+</link>
+<title>
+Run Length Decoding
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;an idea is no more an even relatively constant thing than is a feeling or emotion or volitional process. There exist only changing and transient ideational processes; there are no permanent ideas that return again and disappear again.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Wilhelm Wundt&lt;br&gt;
+&lt;cite&gt;An Introduction to Psychology&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Complexity and Likeablity&lt;/div&gt;
+&lt;p&gt;Wilhelm Wundt is famous for his many contributions to psychology. I have been interested in one particular contribution of his for many years now: the Wundt Curve. The Wundt Curve is a Bell-like curve laying on the x and y axes of Complexity and Likeability. The Wundt Curve shows how we like things to be more complex to a point (the apex of the curve) at which point any more complexity results in a decrease in likeability. The Wundt Curve plays nicely both into Clojure and the Run-Length encoding problem - &lt;a href=&quot;http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html&quot;&gt;# 12 in 99 Lisp Problems&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Clojure&lt;/div&gt;
+&lt;p&gt;First, since I would prefer not to incure the wrath of Rich Hickey, I must clearly state that the complexity I spoke of in the previous paragraph is not the complexity Rich spoke of in his seminal presentation &lt;a href=&quot;http://www.infoq.com/presentations/Simple-Made-Easy&quot;&gt;Simple Made Easy&lt;/a&gt;. In fact, just to make things clear I won&amp;#8217;t use the word complexity anymore - suffice to say that we are talking about novelty here and not something consisting of interwoven parts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I love Clojure. It is simply beautiful. For the other Comp Sci students like me that learned assembly and C rather than Lisp, it certainly has novelty in syntax, but over time, the Clojure student realizes that this novelty sits nicely in a spot that is very likeable. Beyond the syntax, the budding Clojurist realizes that the language is filled with beautiful data structures, ubiquitous interfaces (protocols) and a simple power that is &lt;em&gt;both&lt;/em&gt; novel and very likeable indeed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Information Theory&lt;/div&gt;
+&lt;p&gt;The Wundt curve always makes me think of Information Theory, of entropy and bits and data compression. Run length encoding is a simple form of lossless compression where the encoder reduces the size of an input sequence by representing repeating input elements as a tuple of the element and the count of the &quot;run&quot;, for example we can encode the following input sequence &lt;code&gt;[:a :a :a :a :b :b :b :c :c]&lt;/code&gt; as &lt;code&gt;[(4 :a) (3 :b) (2 :c)]&lt;/code&gt; reducing our input by 33%.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Problem 12 in the 99 Lisp Problems concerns writing a run-length &lt;em&gt;decoder&lt;/em&gt;. A very simple way to write this in Clojure is:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+(defn rl-decode
+  [xs]
+  (-&gt;&gt; xs
+    (map #(if (coll? %)
+            (let [n (first %)
+                  x (second %)]
+              (repeat n x))
+            %))
+    flatten))
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;First we thread our input collection &lt;code&gt;xs&lt;/code&gt; into &lt;code&gt;map&lt;/code&gt; with an anonymous function that either (a) returns the element unchanged or if the element is itself a collection (b) takes the first element as the count and the second element as the item to be repeated and does just that. Finally, thread that output to &lt;code&gt;flatten&lt;/code&gt;, which could probably be replaced with better use of &lt;code&gt;mapcat&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In any case, this is an elegent simple concise solution to an elegant simple concise problem. Huzzah.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Mon, 17 Mar 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/12-03-2014-just-enough-design.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/12-03-2014-just-enough-design.html
+</link>
+<title>
+Just Enough Design
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ticking away the moments that make up a dull day &amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Pink Floyd&lt;br&gt;
+&lt;cite&gt;Time&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Tick tick tick &amp;#8230;&amp;#8203;&lt;/div&gt;
+&lt;p&gt;You were recently going through a codebase that was written no more than two years ago because a colleague asked you a domain question that was not answered in any spec. Despite a rigorous design and review process, the code is nigh unmaintainable. So you tick away a few hours trying to answer a simple question.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Over or Under&lt;/div&gt;
+&lt;p&gt;Sometimes we find that we &lt;strong&gt;over&lt;/strong&gt;-design software. In these cases we are most often left with `Strategy`s and `Abstract*Factory`s littered throughout the code without mention of a core domain Entity in site. This kind of software is difficult to maintain because it is difficult to understand.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Sometimes we find that we &lt;strong&gt;under&lt;/strong&gt;-design software. In these cases we are most often left with tightly coupled Class Hierarchies and broken dependencies in our wake. This kind of software is difficult to maintain because it is difficult to understand &amp;#8230;&amp;#8203; why we didn&amp;#8217;t think a little harder about what we were doing in the first place.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Just in Time! Design!&lt;/div&gt;
+&lt;p&gt;The truth is that it is quite difficult to design complex components. One nice guideline comes from Neal Ford&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Simplify Essential Complexity; Diminish Accidental Complexity&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Neal Ford&lt;br&gt;
+&lt;cite&gt;97 Things Every Software Architect Should Know&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What does this mean? Distill, as much as possible, your core domain problem - the essential complexity - into its simplest form; remove the trappings you think you need to build - the accidental complexity - that don&amp;#8217;t solve the core domain problem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So what kind of process might help us do this? One possible solution is &lt;code&gt;Just in Time Design&lt;/code&gt;. In JIT Design we put off rigorous design until just before we are about to implement a smallish component. We can and should still have well though out High-Level &lt;span class=&quot;line-though&quot;&gt;Architecture&lt;/span&gt; Shared Understanding that guides our smaller designs in the big picture, but put off the arguments about Class and Sequence diagrams until you are about to implement the goo.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Wed, 12 Mar 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/10-03-2014-where-is-the-oop-in-my-layers.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/10-03-2014-where-is-the-oop-in-my-layers.html
+</link>
+<title>
+Where is the OOP in my Layers?
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Help! I think I&amp;#8217;ve lost the OOP in my Layers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Do I Smell Something?&lt;/div&gt;
+&lt;p&gt;Is it just me or did my OOP disappear somewhere between my DAL and my service layer? I bet you&amp;#8217;ve worked on a project with a tiered architecture that boiled down to something like &lt;code&gt;Controller Layer &amp;#8594; Service Layer &amp;#8594; Data Layer&lt;/code&gt; with a nice &lt;code&gt;Model&lt;/code&gt; holding the layers together tighter than a wrestlers unitard.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Our &lt;code&gt;Model&lt;/code&gt; is just a set of &lt;code&gt;Value Object&lt;/code&gt; classes because it&amp;#8217;s too difficult to use the data directly, and that is fine [sigh] but sends us down the slippery slope to follow. If we&amp;#8217;re using &lt;code&gt;Spring&lt;/code&gt;, you might as well push us off a cliff.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We end up with a bunch of Classes that encapsulate &lt;em&gt;only&lt;/em&gt; their injected dependencies but that are in all other ways groups of somewhat related (if we&amp;#8217;re lucky) functions. So at best we&amp;#8217;re doing poor man&amp;#8217;s functional programming in the context of a Class Diagram, or at worst we&amp;#8217;re in a procedural gobbledee-gook of spaghetti code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;All in the name of Cap&amp;#8217;n Crunch?&lt;/div&gt;
+&lt;p&gt;Usually this is all in the name of some Cerealization (or Serialization &amp;#8230;&amp;#8203; fine) library that turns our &lt;code&gt;Model&lt;/code&gt; objects into XML/JSON &amp;#8230;&amp;#8203; &lt;strong&gt;for free&lt;/strong&gt;! Or so the architects keep telling me as I wonder why my &lt;code&gt;getStatus&lt;/code&gt; method takes a &lt;code&gt;Job&lt;/code&gt; object and a bunch of other beans as parameters instead of living with its data &lt;em&gt;in&lt;/em&gt; the &lt;code&gt;Job&lt;/code&gt; class.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Mon, 10 Mar 2014 00:00:00 -0400
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/08-03-2014-property-based-testing.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/08-03-2014-property-based-testing.html
+</link>
+<title>
+Property Based Testing
+</title>
+<description>
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Found, but not proven.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Democritus
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Part of my learning Clojure journey is to question my beliefs regarding testing. For the past few years I&amp;#8217;ve lived the &lt;a href=&quot;http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1/181-8179541-6211637?ie=UTF8&amp;amp;qid=1394325126&amp;amp;sr=8-1&amp;amp;keywords=clean+code&quot;&gt;Clean Code&lt;/a&gt; &lt;a href=&quot;http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530/ref=sr_1_1?ie=UTF8&amp;amp;qid=1394325145&amp;amp;sr=8-1&amp;amp;keywords=test+driven+development&quot;&gt;TDD&lt;/a&gt; style of development: let the rails of unit tests guide you. However, the Clojure brain trust - Rich, Stu and the rest of the brilliant minds at &lt;a href=&quot;http://cognitect.com/&quot;&gt;Cognitect&lt;/a&gt; have made a compelling argument that unit tests, or at least expectation-based tests are old hat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Expectation-Based Testing&lt;/div&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;What is &lt;em&gt;Expectation-Based Testing&lt;/em&gt;?&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;This is, simply, what most of us have been doing ad nauseum. If you&amp;#8217;re like me, the following &lt;code&gt;given&lt;/code&gt;-&lt;code&gt;when&lt;/code&gt;-&lt;code&gt;then&lt;/code&gt; structure will look familiar:&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: java&quot;&gt;
+@Test
+public void testMethodExpectationStyle(){
+	// given
+	// here is where you would set up some mocks, or if you're working with bad/legacy
+	// code, curse loudly as you foolishly try to mock static methods in between reading
+	// the Mockito/Powermock docs
+
+	// when
+	Object actual = objectUnderTest.methodUnderTest(someKnownInput);
+
+	// then
+	assertThat(actual, equalTo(expected));
+}
+&lt;/pre&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;So what are the pros and cons of this approach?&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pros&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;** simple&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;set up the state, run the method, check the output&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;** readability&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;well, sometimes, when the mocking doesn&amp;#8217;t get out of hand&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;** intention&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;you know up front what the method should do&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sidebarblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Intention&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Allow me a brief diversion on &lt;em&gt;Intention&lt;/em&gt;. It turns out &lt;em&gt;Intention&lt;/em&gt; is a blessing and a curse. The developer writing expection-based intends to test the functionality of a method by &lt;em&gt;knowing&lt;/em&gt; what it is supposed to do given a &lt;em&gt;known&lt;/em&gt; input. This is good, for example we know that the reverse of &quot;ball&quot; is &quot;llab&quot;, as such we can test our reverse method is way. However, what if our understanding of the method is wrong? What if it functions differently under different conditions?&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cons&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scale:: since we explicitly define the inputs and outputs, we are limited by the number of tests we are willing to write; we mitigate this by testing known boundary conditions, however, it is impractical to try to test &amp;gt; a handful of inputs for each method&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Property-Based Testing&lt;/div&gt;
+&lt;p&gt;Property-Based testing on the other hand is testing such that the developer defines properties of the method under test and uses a generator function to create large input sets. For example, in Clojure this might look like:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+;; my naive reverse a list implementation
+(defn myreverse
+  [xs]
+  (loop [n 0
+         ys []]
+    (if (&lt; n (count xs))
+      (recur (inc n) (cons (nth xs n) ys))
+      ys)))
+
+;; define a property about that
+;; in this case, simply that for all inputs, myreverse does the same thing as Clojure's reverse
+(def prop-myreverse-equalto-cljreverse
+  (prop/for-all [v (gen/vector gen/int)]
+    (= (reverse v) (myreverse v))))
+;; this is definitely cheating, because for any useful function, you won't have an existing one in the Clojure toolkit, so let's try again - how about that if a reverse twice I should get back the original list:
+(def prop-reverse-reverse
+  (prop/for-all [v (gen/vector gen/int)]
+    (= v (myreverse (myreverse v)))))
+
+;; then i can check these properties, N number of times (in this case N is 1000)
+(c/quick-check 1000 prop-myreverse-equalto-cljreverse)
+(c/quick-check 1000 prop-reverse-reverse)
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So the &lt;code&gt;test.check&lt;/code&gt; library I&amp;#8217;m using in this case will generate 1000 lists of different sizes of random integers and then check each list again the properties i defined.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The power of this is huge. Instead of explicitly enumerating all of the inputs for a given function under test, I can simply define some properties that should be true for all inputs and then let someone else schlep up and down a mountain generating lots of input for me!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The difficult part here is that you will never have the contrived first property example I gvae above: where you will have another function to test against. Instead, almost certainly, one property won&amp;#8217;t do it for any of your functions &amp;#8230;&amp;#8203; instead you will have to tease out all of the salient properties to ensure the functionality of your method.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We have swapped &quot;generate all of the import inputs and know what the outputs are supposed to be&quot; for &quot;generate all of the important properties&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Which do you prefer?&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Sat, 08 Mar 2014 00:00:00 -0500
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/07-03-2014-try_again.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/07-03-2014-try_again.html
+</link>
+<title>
+Happiness and Coding
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;In the Beginning&lt;/div&gt;
+&lt;p&gt;Am I the only one who feels like this?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Lost&lt;/div&gt;
+&lt;p&gt;Sometimes I feel so lost: I feel lost in life, love and happiness. Yes: I have first world problems. By most measures I have absolutely nothing to complain about, however most days I feel like I&amp;#8217;m doing something wrong. Do you feel like this sometimes too?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I feel like I&amp;#8217;m in a perpetual loop of &quot;Why didn&amp;#8217;t this go the way I want?&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Well &amp;#8230;&amp;#8203; I&amp;#8217;m starting to think I don&amp;#8217;t know what I want. So &amp;#8230;&amp;#8203; let&amp;#8217;s make a list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;The List&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I want to be healthy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I want to be around my family&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I want to be productive at work&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I want to always be learning&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The funny thing is that I &lt;em&gt;do&lt;/em&gt; get at least a few of these every day. So maybe the problem is that I&amp;#8217;m not in the moment. That is why I love coding so much: I am in the moment when I am coding. I get lost. I could wake up 3 hours later without knowing what happened, as the great philosopher &lt;a href=&quot;http://www.imdb.com/character/ch0009005/?ref_=tt_cl_t2&quot;&gt;Frank Ricard&lt;/a&gt; once did during a debate:&lt;/p&gt;
+&lt;/div&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;/blog//www.youtube.com/embed/_yYDzLUH1NE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Coding Snippet of the Day&lt;/div&gt;
+&lt;p&gt;I have been working my through the &lt;a href=&quot;http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html&quot;&gt;99 Lisp Problems&lt;/a&gt; since I heard about them from &lt;a href=&quot;http://rajugandhi.com/&quot;&gt;Raju Gandhi&lt;/a&gt;'s great &quot;Learning to Learn&quot; presentation at No Fluff.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Flattening a list gave me some issues: I kept banging my head against it with:&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+(defn my-flatten
+  [xs]
+  (when-let [x (first xs)]
+    (cons
+      (if (seq? x)
+          (my-flatten x)
+          [x])
+      (my-flatten (rest xs)))))
+(my-flatten '(1 2 (3) (4 5) 6))
+
+ninetynine-clj-problems.core=&gt; (my-flatten '(1 2 (3) (4 5) 6))
+&lt;/pre&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;After &lt;em&gt;way&lt;/em&gt; too much time, I realized that I was literally 4 characters off (note the cons &amp;#8594; concat) &amp;#8230;&amp;#8203; so close.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;brush: clojure&quot;&gt;
+(defn my-flatten
+  [xs]
+  (when-let [x (first xs)]
+    (concat
+      (if (seq? x)
+          (my-flatten x)
+          [x])
+      (my-flatten (rest xs)))))
+(my-flatten '(1 2 (3) (4 5) 6))
+
+ninetynine-clj-problems.core=&gt; (my-flatten '(1 2 (3) (4 5) 6))
+&lt;/pre&gt;
+</description>
+<pubDate>
+Fri, 07 Mar 2014 00:00:00 -0500
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/01-03-2014-ten-observations-from-scrumbut.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/01-03-2014-ten-observations-from-scrumbut.html
+</link>
+<title>
+10 Observations From Scrumbut
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Scrumbut&lt;/div&gt;
+&lt;p&gt;What is scrumbut?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;10 Observations&lt;/div&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Scrum has a lot of overhead
+Between the planning, scrums, review and retrospectives this is a heavy weight process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scrumbut has &lt;em&gt;MORE&lt;/em&gt; overhead
+Does it? Or is this a nice headline&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We do the easy but least-effective parts of scrum
+I think Venkat said this in a presentation: we choose the easy but useless parts of scrum. We choose to do the daily standups but what benefit are they? We kind of do user stories&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grooming the backlog is hard
+Speaking to you as an engineer turned manager: grooming the backlog is not easy. When you are scrumming in a fixed-length project, managing the backlog is essential &lt;em&gt;and&lt;/em&gt; difficult.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Functionality is everything
+You must build incremental functionality. Every sprint show something. Demo. Demo. Demo. Prototype if you have to. Just don&amp;#8217;t disappear down the rabbit hole for 3 weeks with nothing to show for it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simplicity over All Else
+Rich Hickey joked about this in the seminal presentation Simple Made Easy; How can you sprint forever? Just fire the starting gun every 40 yards. Teams can&amp;#8217;t sprint forever. However, teams can build simple software that is easier to maintain and extend.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Binary Rules
+When in doubt, distill a problem to two alternatives &amp;#8230;&amp;#8203; then choose the one that is more flexible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Baby Steps
+Take small steps. It doesn&amp;#8217;t make any sense to refactor your bad design into a perfect SOA in one sprint. As Bob said, &quot;baby steps&quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Executable Acceptance Tests over Unit Tests
+Don&amp;#8217;t get me wrong, I love unit tests. Unit tests are essential if you want to refactor later. However, unit tests don&amp;#8217;t guarantee functionality. Functional tests gaurantee funcitonality, but we don&amp;#8217;t know if it is the &lt;em&gt;right&lt;/em&gt; functionality. Only acceptance tests, executable use case acceptance tests, are valuable as repeatable tests to see if your module/deliverable/artifact does what the stakeholders want it to do.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Never forget deployment
+Have you written beatiful code only to realize that deploying it is a tangled hairball. Start with the end. Think about the machines on which your code will run first. Then work your way back to the design. Too often teams focus on class diagrams 90% and spend only 10% on component/deployment design.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Sat, 01 Mar 2014 00:00:00 -0500
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+<item>
+<guid>
+http://blogawesome.com/blog/posts/01-03-2014-i-wonder.html
+</guid>
+<link>
+http://blogawesome.com/blog/posts/01-03-2014-i-wonder.html
+</link>
+<title>
+I wonder
+</title>
+<description>
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I think my brother is coming into an opportunity. He is working at a new company that has lots of room for improvement. I asked him to bring a notebook to work and note any inefficiencies he comes across.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It got me thinking that I could free-lance for this company. However, I wonder if I have the skills to architect large solutions. I think I&amp;#8217;m a strong software developer. I must not be an idiot because Yaning thinks I&amp;#8217;m pretty smart. I think Peter thouht I was smart too. However, I did not do well in the HubSpot interview. Though that is really confusing to me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What did I not do well on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Memoize&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Circular Buffer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write SQL to return Twitter feed&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I don&amp;#8217;t think I nailed any of these. I think I did the best on the Circular Buffer - I did OK there. I shot myself in the foot with Memoize because I tried and failed at Clojure before moving on to a bad Java solution. The SQL I did OK, but again, failed to understand B-Trees and some basic SQL stuff.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Memoize in clojure:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;(defn memoize
+  [f]
+  (let [cache (atom {})]
+    (fn [x]
+      (if-let [ret (get @cache x)]
+        (val ret)
+        (let [fx (f x)]
+          (do
+            (swap! cache assoc x fx)
+            fx))))))&lt;/p&gt;
+&lt;/div&gt;
+</description>
+<pubDate>
+Sat, 01 Mar 2014 00:00:00 -0500
+</pubDate>
+<author>
+Bob Bobbert
+</author>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>My Awesome Blog: Why Clojure is Great: Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <link href="../css/screen.css" rel="stylesheet" type="text/css" />
+    <link href="../css/asciidoc.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1><a class="navbar-brand" href="/blog/index.html">My Awesome Blog</a></h1>
+            </div>
+            <!-- nav links -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/blog/index.html">Home</a></li>
+                    <li ><a href="/blog/archives.html">Archives</a></li>
+                    
+                    <li >
+                        <a href="/blog/pages/adoc-page.html">Adoc Page</a>
+                    </li>
+                    
+                    <li><a href="/blog/feed.xml">RSS</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div id="wrapper" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="content">
+                
+<div id="post">
+    <div id="post-header">
+    <h2>Why Clojure is Great: Data</h2>
+    <div id="post-meta">
+        
+        <div class="date">May 5, 2014</div>
+    </div>
+</div>
+<div>
+    </ol class="contents">
+    <div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Alan Perlis
+</div>
+</div>
+<div class="paragraph">
+<p>You&#8217;ve probably seen this quote before. I&#8217;ve seen in in countless blogs and books. It is referenced in the wonderful Clojure book <a href="http://joyofclojure.com/">The Joy of Clojure</a>. I recently experienced the joy of Clojure directly through Perlis' pearl of wisdom (all puns intended).</p>
+</div>
+<div class="paragraph">
+<p>I recently read a nice blog post on avoiding <a href="http://www.javacodegeeks.com/2014/05/clojure-how-to-prevent-expected-map-got-vector-and-similar-errors.html">unexpected issues</a> in Clojure functions. I like the advice: small fns, destructuring and pre/post conditions so thought I would integrate it into a few functions. The epiphany came with the pre/post conditions.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s start with a simple function that transforms a list to a vector.</p>
+</div>
+<pre class="brush: clojure">
+(defn list->vector
+  [xs]
+  (reduce conj [] xs))
+</pre>
+<div class="paragraph">
+<p>I want to add pre/post conditions to this simple function, but I can&#8217;t seem to remember the syntax. Let&#8217;s see if I can figure it out using the Clojure composite data types: set, vector, list and map.</p>
+</div>
+<div class="paragraph">
+<p>First: there are two named types of conditions, <code>:pre</code> and <code>:post</code>. Well the Clojure composite data type that supports named associations is a map, does this look right:</p>
+</div>
+<pre class="brush: clojure">
+{:pre nil :post nil}
+</pre>
+<div class="paragraph">
+<p>Second, let&#8217;s think of what the values for each of the <code>:pre</code> and <code>:post</code> keys should be. It seems reasonable that there could be more than one <code>:pre</code> function and more than one <code>:post</code> function, so each value should be a collection of some sort. We don&#8217;t really need to name the elements of these collections, but some sort of sequential collection makes sense so that the Clojure internals can apply the functions in order. In fact, doesn&#8217;t <code>seq</code> makes sense because I&#8217;m sure the Clojure internals would love to use first <code>first</code> and <code>rest</code> to apply a collection of somethings. It seems the choice is between <code>list</code> and <code>vector</code>, and when choosing between a list and vector, we usually use vectors unless we are generating code forms because of the nice visual offset of the <code>[]</code>, so a vector makes sense for each value:</p>
+</div>
+<pre class="brush: clojure">
+{:pre [] :post []}
+</pre>
+<div class="paragraph">
+<p>Lastly, we know that we are creating pre and post conditions, which are functions, so there&#8217;s only one Clojure data types for this job, <code>list</code>, I&#8217;ve filled in each of the :pre and :post vectors with two functions that just have a bunk name "fn" and some "args".</p>
+</div>
+<pre class="brush: clojure">
+{:pre [(fn args) (fn args))] :post [(fn args) (fn args))]}
+</pre>
+<div class="paragraph">
+<p>Let&#8217;s say that we want our functions to ensure that our input is a list and not empty and our output is a vector and not empty; putting it all together:</p>
+</div>
+<pre class="brush: clojure">
+(defn list->vector
+  [xs]
+  {:pre [(list? xs) (not (empty? xs))] :post [(vector? %) (not (empty? %))]}
+  (reduce conj [] xs))
+[1 2 3]
+AssertionError Assert failed: (list? xs)  user/list->vector (form-init2119333260165711694.clj:1)
+AssertionError Assert failed: (not (empty? xs))  user/list->vector (form-init2119333260165711694.clj:1)
+</pre>
+<div class="paragraph">
+<p>Imagine trying the same process of discovery in Java for example without the aid of an IDE to show you the available methods on each object. It would be nearly impossible to do this in Java because most bits of data are wrapped in Objects with named fields and methods. This is one of the reasons Clojure is so intuitively powerful. And one of the reasons Perlis was so right.</p>
+</div>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/blog/tags/cryogen.html">cryogen</a>
+    
+    <a href="/blog/tags/asciidoc.html">asciidoc</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/blog/posts/27-05-2014-java-service-rpm-example.html">&laquo; Java Service RPM Example</a>
+        
+        
+        ||
+        
+        
+        <a href="/blog/posts/04-04-2014-refocus-simplify-1.html">Simplify and Focus Learning &raquo;</a>
+        
+    </div>
+
+    
+
+
+</div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="sidebar">
+                    <h3>Links</h3>
+                    <ul id="links">
+                        <li><a href="http://carmenla.me/blog/index.html">Carmen's Blog</a></li>
+                        
+                    </ul>
+                    <div id="recent">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                        
+                        <li><a href="/blog/posts/30-12-2014-lamda-architecture.html">5 Lamda Architecture Resources</a></li>
+                        
+                        <li><a href="/blog/posts/27-05-2014-java-service-rpm-example.html">Java Service RPM Example</a></li>
+                        
+                        <li><a href="/blog/posts/05-05-2014-one-reason-clojure-is-great.html">Why Clojure is Great: Data</a></li>
+                        
+                        </ul>
+                    </div>
+                    <div id="tags">
+                        <h3>Tags</h3>
+                        <ul>
+                        
+                        <li><a href="/blog/tags/asciidoc.html">asciidoc</a></li>
+                        
+                        <li><a href="/blog/tags/cryogen.html">cryogen</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright &copy; 2014 BLOGAWESOME
+            <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+    </div>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="../js/highlight.pack.js" type="text/javascript"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
