@@ -1,7 +1,7 @@
-{:site-title       "My Awesome Blog"
- :author           "Bob Bobbert"
- :description      "This blog is awesome"
- :site-url         "http://blogawesome.com/"
+{:site-title       "tankthink"
+ :author           "Tank"
+ :description      "A passionate tale of love, loss, and code."
+ :site-url         "http://tankthink.technology/"
  :post-root        "posts"
  :tag-root         "tags"
  :page-root        "pages"
@@ -14,6 +14,6 @@
  :sass-dest        nil
  :resources        ["css" "js" "404.html"]
  :keep-files       [".git"]
- :disqus?          false
- :disqus-shortname ""
+ :disqus?          true 
+ :disqus-shortname "tankthinktechnology"
  :ignored-files    [#"\.#.*" #".*\.swp$"]}
