@@ -1,0 +1,23 @@
+---
+- hosts: default
+  remote_user: "{{ remote_user | default(vagrant) }}"
+  sudo: yes
+  handlers:
+    - include: handlers/restart.yaml
+  tasks:
+  - name: nginx | check yum repo
+    command: 'ls /etc/yum.repos.d/nginx.repo'
+    register: result
+    ignore_errors: True
+
+  - name: nginx | install yum repo
+    template: src=templates/etc-yum.repos.d-nginx.repo dest=/etc/yum.repos.d/nginx.repo
+    when: result|failed
+
+  - name: nginx | install
+    yum: name=nginx state=latest
+
+  - name: nginx | Compile Nginx configuration
+    template: src=templates/etc-nginx-conf.d-virtual.conf dest=/etc/nginx/conf.d/virtual.conf
+    notify:
+      - restart nginx
