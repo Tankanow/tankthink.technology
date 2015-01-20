@@ -1,0 +1,64 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'chef/centos-6.5'...
+[KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'chef/centos-6.5' is up to date...
+==> default: Setting the name of the VM: vagrant_default_1421533713034_70951
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/adam_tankanow/Documents/code/public/github/tankanow/working/tankthink.technology/vagrant
+    default: /var/blog => /Users/adam_tankanow/Documents/code/public/github/tankanow/working/tankthink.technology/resources/public
+==> default: Running provisioner: ansible...
+ANSIBLE_FORCE_COLOR=true ANSIBLE_HOST_KEY_CHECKING=false PYTHONUNBUFFERED=1 ansible-playbook --private-key=/Users/adam_tankanow/.vagrant.d/insecure_private_key --user=vagrant --limit='default' --inventory-file=/Users/adam_tankanow/Documents/code/public/github/tankanow/working/tankthink.technology/vagrant/.vagrant/provisioners/ansible/inventory --extra-vars={"ansible_ssh_user":"vagrant"} -v provisioning/system.yaml
+
+PLAY [default] **************************************************************** 
+
+GATHERING FACTS *************************************************************** 
+[0;32mok: [default][0m
+
+TASK: [ansible prereq | install libselinux-python] **************************** 
+[0;33mchanged: [default] => {"changed": true, "msg": "", "rc": 0, "results": ["Loaded plugins: fastestmirror\nSetting up Install Process\nLoading mirror speeds from cached hostfile\n * base: centos.mirror.nac.net\n * extras: mirrors.usinternet.com\n * updates: mirror.cs.vt.edu\nResolving Dependencies\n--> Running transaction check\n---> Package libselinux-python.x86_64 0:2.0.94-5.8.el6 will be installed\n--> Processing Dependency: libselinux = 2.0.94-5.8.el6 for package: libselinux-python-2.0.94-5.8.el6.x86_64\n--> Running transaction check\n---> Package libselinux.x86_64 0:2.0.94-5.3.el6_4.1 will be updated\n--> Processing Dependency: libselinux = 2.0.94-5.3.el6_4.1 for package: libselinux-utils-2.0.94-5.3.el6_4.1.x86_64\n---> Package libselinux.x86_64 0:2.0.94-5.8.el6 will be an update\n--> Running transaction check\n---> Package libselinux-utils.x86_64 0:2.0.94-5.3.el6_4.1 will be updated\n---> Package libselinux-utils.x86_64 0:2.0.94-5.8.el6 will be an update\n--> Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package                  Arch          Version               Repository   Size\n================================================================================\nInstalling:\n libselinux-python        x86_64        2.0.94-5.8.el6        base        203 k\nUpdating for dependencies:\n libselinux               x86_64        2.0.94-5.8.el6        base        108 k\n libselinux-utils         x86_64        2.0.94-5.8.el6        base         82 k\n\nTransaction Summary\n================================================================================\nInstall       1 Package(s)\nUpgrade       2 Package(s)\n\nTotal download size: 393 k\nDownloading Packages:\n--------------------------------------------------------------------------------\nTotal                                           1.1 MB/s | 393 kB     00:00     \nRunning rpm_check_debug\nRunning Transaction Test\nTransaction Test Succeeded\nRunning Transaction\n\r  Updating   : libselinux-2.0.94-5.8.el6.x86_64                             1/5 \n\r  Updating   : libselinux-utils-2.0.94-5.8.el6.x86_64                       2/5 \n\r  Installing : libselinux-python-2.0.94-5.8.el6.x86_64                      3/5 \n\r  Cleanup    : libselinux-utils-2.0.94-5.3.el6_4.1.x86_64                   4/5 \n\r  Cleanup    : libselinux-2.0.94-5.3.el6_4.1.x86_64                         5/5 \n\r  Verifying  : libselinux-utils-2.0.94-5.8.el6.x86_64                       1/5 \n\r  Verifying  : libselinux-2.0.94-5.8.el6.x86_64                             2/5 \n\r  Verifying  : libselinux-python-2.0.94-5.8.el6.x86_64                      3/5 \n\r  Verifying  : libselinux-2.0.94-5.3.el6_4.1.x86_64                         4/5 \n\r  Verifying  : libselinux-utils-2.0.94-5.3.el6_4.1.x86_64                   5/5 \n\nInstalled:\n  libselinux-python.x86_64 0:2.0.94-5.8.el6                                     \n\nDependency Updated:\n  libselinux.x86_64 0:2.0.94-5.8.el6  libselinux-utils.x86_64 0:2.0.94-5.8.el6 \n\nComplete!\n"]}[0m
+
+TASK: [ansible prereq | install unzip] **************************************** 
+[0;33mchanged: [default] => {"changed": true, "msg": "", "rc": 0, "results": ["Loaded plugins: fastestmirror\nSetting up Install Process\nLoading mirror speeds from cached hostfile\n * base: centos.mirror.nac.net\n * extras: mirrors.usinternet.com\n * updates: mirror.cs.vt.edu\nResolving Dependencies\n--> Running transaction check\n---> Package unzip.x86_64 0:6.0-1.el6 will be installed\n--> Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package          Arch              Version               Repository       Size\n================================================================================\nInstalling:\n unzip            x86_64            6.0-1.el6             base            149 k\n\nTransaction Summary\n================================================================================\nInstall       1 Package(s)\n\nTotal download size: 149 k\nInstalled size: 313 k\nDownloading Packages:\nRunning rpm_check_debug\nRunning Transaction Test\nTransaction Test Succeeded\nRunning Transaction\n\r  Installing : unzip-6.0-1.el6.x86_64                                       1/1 \n\r  Verifying  : unzip-6.0-1.el6.x86_64                                       1/1 \n\nInstalled:\n  unzip.x86_64 0:6.0-1.el6                                                      \n\nComplete!\n"]}[0m
+
+PLAY [default] **************************************************************** 
+
+GATHERING FACTS *************************************************************** 
+[0;32mok: [default][0m
+
+TASK: [nginx | check yum repo] ************************************************ 
+[0;31mfailed: [default] => {"changed": true, "cmd": ["ls", "/etc/yum.repos.d/nginx.repo"], "delta": "0:00:00.004097", "end": "2015-01-17 22:29:52.599039", "rc": 2, "start": "2015-01-17 22:29:52.594942"}[0m
+[0;31mstderr: ls: cannot access /etc/yum.repos.d/nginx.repo: No such file or directory[0m
+[0;36m...ignoring[0m
+
+TASK: [nginx | install yum repo] ********************************************** 
+[0;33mchanged: [default] => {"changed": true, "dest": "/etc/yum.repos.d/nginx.repo", "gid": 0, "group": "root", "md5sum": "bacf9b5a8c1c4bf3ef06e10ce184c5e1", "mode": "0644", "owner": "root", "secontext": "system_u:object_r:etc_t:s0", "size": 99, "src": "/home/vagrant/.ansible/tmp/ansible-tmp-1421533794.14-127314144647803/source", "state": "file", "uid": 0}[0m
+
+TASK: [nginx | install] ******************************************************* 
+[0;33mchanged: [default] => {"changed": true, "msg": "", "rc": 0, "results": ["Loaded plugins: fastestmirror\nSetting up Install Process\nLoading mirror speeds from cached hostfile\n * base: centos.mirror.nac.net\n * extras: mirrors.usinternet.com\n * updates: mirror.cs.vt.edu\nResolving Dependencies\n--> Running transaction check\n---> Package nginx.x86_64 0:1.6.2-1.el6.ngx will be installed\n--> Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package        Arch            Version                    Repository      Size\n================================================================================\nInstalling:\n nginx          x86_64          1.6.2-1.el6.ngx            nginx          336 k\n\nTransaction Summary\n================================================================================\nInstall       1 Package(s)\n\nTotal download size: 336 k\nInstalled size: 828 k\nDownloading Packages:\nRunning rpm_check_debug\nRunning Transaction Test\nTransaction Test Succeeded\nRunning Transaction\n\r  Installing : nginx-1.6.2-1.el6.ngx.x86_64                                 1/1 \n----------------------------------------------------------------------\n\nThanks for using nginx!\n\nPlease find the official documentation for nginx here:\n* http://nginx.org/en/docs/\n\nCommercial subscriptions for nginx are available on:\n* http://nginx.com/products/\n\n----------------------------------------------------------------------\n\r  Verifying  : nginx-1.6.2-1.el6.ngx.x86_64                                 1/1 \n\nInstalled:\n  nginx.x86_64 0:1.6.2-1.el6.ngx                                                \n\nComplete!\n"]}[0m
+
+TASK: [nginx | Compile Nginx configuration] *********************************** 
+[0;33mchanged: [default] => {"changed": true, "dest": "/etc/nginx/conf.d/virtual.conf", "gid": 0, "group": "root", "md5sum": "1c917d9abb90e9af396255d6cbcd1acb", "mode": "0644", "owner": "root", "secontext": "system_u:object_r:etc_t:s0", "size": 209, "src": "/home/vagrant/.ansible/tmp/ansible-tmp-1421533798.9-240446712849424/source", "state": "file", "uid": 0}[0m
+
+NOTIFIED: [restart nginx] ***************************************************** 
+[0;33mchanged: [default] => {"changed": true, "name": "nginx", "state": "started"}[0m
+
+PLAY RECAP ******************************************************************** 
+[0;33mdefault[0m                    : [0;32mok[0m[0;32m=[0m[0;32m9[0m    [0;33mchanged[0m[0;33m=[0m[0;33m7[0m    unreachable=0    failed=0   
+
