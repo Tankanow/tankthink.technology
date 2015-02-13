@@ -1,0 +1,7 @@
+---
+- hosts: default
+  sudo: yes
+  tasks:
+
+  - name: copy | blog
+    copy: src=../../resources/public/ dest=/var/blog owner=root group=root mode=0644 
